@@ -8,7 +8,7 @@ async fn main() {
             .route("/gcd", web::post().to(post_gcd))
     });
 
-    println!("Serving on http://localhost:3000...");
+    println!("Serving on http://localhost:3000/ ...");
     server
         .bind("127.0.0.1:3000").expect("error binding server to address")
         .run()
